@@ -13,6 +13,8 @@ class _ContractState extends State<Contract> {
     return Scaffold(
      appBar: AppBar(
        title: Text('Contact Us'),
+       centerTitle: true,
+       backgroundColor: Colors.brown,
      ),
      body: Center(
        child: Column(

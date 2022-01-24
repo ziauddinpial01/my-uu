@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:my_uu/conts/apps_conts.dart';
 
@@ -13,6 +14,8 @@ class _SignInState extends State<SignIn> {
   TextEditingController _passwordController = TextEditingController();
   bool _obscureText = true;
  var _passwordVisible = false;
+   FirebaseAuth auth = FirebaseAuth.instance;
+
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -134,11 +137,19 @@ class _SignInState extends State<SignIn> {
              controller: _passwordController,
              obscureText: !_passwordVisible,
              decoration: InputDecoration(
-         labelText: 'Password',
-         hintText: 'Enter your password',
-         border: OutlineInputBorder(
-                                           borderRadius: BorderRadius.circular(30)
-                                        ),
+                  label: Text('Password'),
+                                       hintStyle: TextStyle(
+                                         fontSize: 14.0,
+                                         color: Color(0xFF414041),
+                                       ),
+                                      
+                                       labelStyle: TextStyle(
+                                         fontSize: 20.0,
+                                         color: Colors.red,
+                                       ),
+           border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(30)
+           ),
          suffixIcon: IconButton(
                  icon: Icon(
                     _passwordVisible
@@ -161,10 +172,24 @@ class _SignInState extends State<SignIn> {
                              SizedBox(height: 15.0,),
                              SizedBox(
                                height: 50.0,
-                               child: ElevatedButton(onPressed: () {
+                               child: ElevatedButton(onPressed: ()async {
+  try{
+                         final users= await    auth.signInWithEmailAndPassword(
+                              email: _emailController.text, 
+                              password: _passwordController.text.toString().trim(),
+                              
+                              );
+                              if(users!=null){
                                  Navigator.pushNamed(context, AppConstant.home);
+
+                              }
+                            }on FirebaseAuthException catch (e){
+                              print(e.code);
+                            };
                                },
-                                child: Text('Sign in',textAlign: TextAlign.center,)),
+                                child: Text('Sign in',textAlign: TextAlign.center,),
+                                
+                                ),
                              ),                        
                              SizedBox(
                                height: 20.0,
@@ -174,18 +199,18 @@ class _SignInState extends State<SignIn> {
                                  Text(
                                    "Don't have an account?",
                                    style: TextStyle(
-                                     fontSize: 13.0,
+                                     fontSize: 20.0,
                                      fontWeight: FontWeight.w600,
-                                     color: Color(0xFFBBBBBB),
+                                     color: Colors.red,
                                    ),
                                  ),
                                  GestureDetector(
                                    child: Text(
                                      " Sign Up",
                                      style: TextStyle(
-                                       fontSize: 13.0,
+                                       fontSize: 20.0,
                                        fontWeight: FontWeight.w600,
-                                       color: Colors.red,
+                                       color: Colors.yellow,
                                      ),
                                    ),
                                    onTap: () {

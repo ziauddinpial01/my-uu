@@ -19,7 +19,7 @@ class _TeachersState extends State<Teachers> {
       techdetails: TechDetailsModel(
         id: 1, name1: 'PROFESSOR MUMTAZ BEGUM', degignation1: 'Professor',
         img1: 'assets/images/bangla-1.jpg',
-         name2: 'MD. SAMZIR AHMED', degignation2: 'Assistant Professor & Chairman (Acting)',
+         name2: 'MD. SAMZIR AHMED', degignation2: 'Assistant Professor & Chairman',
         img2: 'assets/images/bangla-2.jpg',
         name3: 'DR.SOHELY NARGIS', degignation3: 'Assistant Professor', 
         img3: 'assets/images/bangla-3.jpg',
@@ -48,7 +48,7 @@ class _TeachersState extends State<Teachers> {
       )),
       Teacher(id: 3, name: 'Civil Engineering',
       techdetails: TechDetailsModel(
-        id: 3, name1: 'MD. ASHRAFUL ALAM', degignation1: 'Assistant Professor & Chairman (Acting)',
+        id: 3, name1: 'MD. ASHRAFUL ALAM', degignation1: 'Assistant Professor & Chairman',
         img1: 'assets/images/Civil-1.jpg',
          name2: 'MD. ZAKARIA HABIB', degignation2: 'Assistant Professor',
         img2: 'assets/images/Civil-2.jpg',
@@ -214,7 +214,7 @@ class _TeachersState extends State<Teachers> {
       Teacher(id: 15,name: 'Textile Engineering', techdetails: TechDetailsModel(
         id: 15, name1: 'MD. ABU BAKAR SIDDIQUE', degignation1: 'Adviser',
         img1: 'assets/images/textile-1.jpg',
-         name2: 'MD. HUMAYUN KABIR KHAN', degignation2: 'Assistant Professor & Chairman (Acting)',
+         name2: 'MD. HUMAYUN KABIR KHAN', degignation2: 'Assistant Professor & Chairman',
         img2: 'assets/images/textile-2.jpg',
         name3: 'MD. ANWAR HOSSAIN', degignation3: 'Lecturer', 
         img3: 'assets/images/textile-4.jpg',
@@ -227,7 +227,7 @@ class _TeachersState extends State<Teachers> {
       )),
     ];
     return Scaffold(appBar: AppBar(
-      title: Text('Teachers List'),
+      title: Text('Teachers List',style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold),),backgroundColor: Colors.brown,
       centerTitle: true,
     ),
       backgroundColor: Colors.grey,
@@ -282,13 +282,13 @@ class _TeachersState extends State<Teachers> {
                }
              },
              style: ElevatedButton.styleFrom(
-               primary: Colors.green
+               primary: Color(0xFF80cbc4)
              ),
               child: Text('${teacher.elementAt(index).name}',
               style: TextStyle(
-                fontSize: 20.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.bold,
-                // color: Colors.green
+                color: Colors.black
               ),
               )
               ),

@@ -8,6 +8,8 @@ class Gallery extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Photo Gallery'),
+        centerTitle: true,
+        backgroundColor: Colors.brown,
       ),
       body: SingleChildScrollView(
         child: Column(

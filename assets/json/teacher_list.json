@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "dept": "Bangla",
+        "teach_list":[
+            {
+               "EMPID": 140891 ,
+               "name": "PROFESSOR MUMTAZ BEGUM",
+               "desig": "Professor",
+               "img": "https://uttarauniversity.edu.bd/api/cache/images/7/b/d/c/9/7bdc9af80493408dc3a17542a639e2e5f94548bb.jpg"
+
+            },
+            {
+                "EMPID": 170613 ,
+                "name": "MD. SAMZIR AHMED",
+                "desig": "Assistant Professor & Chairman (Acting)",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/2/7/a/e/1/27ae1ca9fae405829e9115002cc7ed2069cad852.jpg"
+                
+             },
+             {
+                "EMPID": 140061 ,
+                "name": "DR.SOHELY NARGIS",
+                "desig": "Assistant Professor",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/1/3/c/5/8/13c589bac6ab971e934eb8a52df88b96fdd33587.jpg"
+                
+             },
+             {
+                "EMPID": 213140 ,
+                "name": "Mizanur Rahman Khan",
+                "desig": "Senior Lecturer And Coordinator",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/5/8/2/d/c/582dcf6040b286e493c17727b7e21386cf145429.jpg"
+                
+             },
+             {
+                "EMPID": 213141 ,
+                "name": "Raiyan Suhanal Rajee",
+                "desig": "Senior Lecturer And Coordinator",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/8/e/5/b/8/8e5b828167f0e409f4e0d5ba3c98562d308ed0fc.jpg"
+             },
+             {
+                "EMPID": 130316 ,
+                "name": "SALAH UDDIN QUADER",
+                "desig": "Senior Lecturer",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/8/4/8/6/2/8486284853371af72a2f53b278d0719579a39c98.jpg"
+             }
+             
+        ]
+
+
+
+    },
+    {
+        "id": 2,
+        "dept": "Business",
+        "teach_list":[
+            {
+               "EMPID": 160009 ,
+               "name": "DR. A S M SHAHABUDDIN",
+               "desig": "Dean",
+               "img": "https://uttarauniversity.edu.bd/api/cache/images/5/e/4/1/4/5e414929f40d3116f5d7454de1161e4f22dc5546.jpg"
+            },
+            {
+                "EMPID": 150500 ,
+                "name": "ABID AZIZ",
+                "desig": "Junior Lecturer",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/a/2/a/1/d/a2a1d48ee45d32a56c54e7583f3553d331387552.jpg"
+             },
+             {
+                "EMPID": 100308 ,
+                "name": "AFRIDA AKHTER TITHI",
+                "desig": "Senior Lecturer",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/5/7/7/8/2/577825a9f494f574ab3bce26dc39fd44ae976c1a.jpg" 
+             },
+             {
+                "EMPID": 90008 ,
+                "name": "DR. DEBI NARAYAN RUDRA PAUL",
+                "desig": "Professor",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/0/b/2/b/5/0b2b5e4973214ff9429724e3a7e5de66ccacd0fc.jpg" 
+             },
+             {
+                "EMPID": 160296 ,
+                "name": "DR. MD. GOLAM MORSHED",
+                "desig": "Assistant Professor",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/e/2/5/5/0/e2550b52c3fac3bafd368d37eb596b5a0336fb98.jpg"
+            },
+             {
+                "EMPID": 120309 ,
+                "name": "FARHANA MITU",
+                "desig": "Assistant Professor",
+                "img": "https://uttarauniversity.edu.bd/api/cache/images/e/0/3/a/1/e03a183acbdf027314d8cdeeba4fb3679f4e9e90.jpg"
+            }
+             
+        ]
+
+
+
+    }
+]

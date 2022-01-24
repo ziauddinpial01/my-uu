@@ -13,23 +13,15 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int activeIndex=0;
    final urlImages =[
-    // ' assets/images/uu-1.jpg'
-    // 'assets/images/uu-2.jpg'
-    //  'assets/images/uu-3.jpg'
-    // ' assets/images/uu-4.jpg'
-    //  'assets/images/uu-5.jpg'
-    //  'assets/images/uu-6.jpg'
-    // 'assets/images/uu-7.png'
-    // ' assets/images/uu-8.png'
-  //   'https://uttarauniversity.edu.bd/wp-content/themes/utheme/images/uu-permanent-campus-update-img.jpg',
-  //  'https://thefinancialexpress.com.bd/uploads/1541151064.jpg',
-  // 'https://www.biusc.org/wp-content/uploads/2019/02/Uttara-University.jpg',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjltxQy3OC3_H7XcqbnE3hudttbIxK0YF1tw&usqp=CAU',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbafzkef41WHWWZWDnf87Mk-yvm2TBq7-29A&usqp=CAU',
-   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCwnHoYXps1QFLeNBF_KgNLND1izMIlRYqXw&usqp=CAU',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDayp3zySztonKjWmxLleyRWvn30so-WUO8A&usqp=CAU',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsKAeJJgTJ6SRi84arf6FGbX1TilSvPP-gA&usqp=CAU',
-  
+    'assets/images/uu-1.jpg',
+    'assets/images/uu-2.jpg',
+     'assets/images/uu-3.jpg',
+    'assets/images/uu-4.jpg',
+     'assets/images/uu-5.jpg',
+     'assets/images/uu-6.jpg',
+    'assets/images/uu-7.png',
+    'assets/images/uu-8.jpg',
+ 
   ];
   @override
   Widget build(BuildContext context) {
@@ -131,7 +123,7 @@ class _HomeState extends State<Home> {
                         context: context,
                         name: 'Admission',
                         // image: 'assets/images/uu-4.jpg',
-                        color: Color(0xFF8d6e63),
+                        color: Colors.blueAccent,
                         iconData: Icons.add,
                         onTab: () {
                           Navigator.pushNamed(context,AppConstant.admisstion);
@@ -268,8 +260,8 @@ Widget buildImage( String urlImage, int index)=> Container(
   margin: EdgeInsets.symmetric(horizontal: 24),
   color: Colors.grey,
   
-  child: Image.network(
-    urlImage,
+  child: Image.asset(
+    '${urlImage}',
     fit: BoxFit.cover,
   ), 
   

@@ -115,15 +115,15 @@ class Administrative extends StatelessWidget {
                 }
               },
                style: ElevatedButton.styleFrom(
-              primary: Color(0xFFffee58),
+              primary: Color(0xFFf48fb1),
                        
             ),
                child: Padding(
                  padding: const EdgeInsets.all(15.0),
                  child: Text('${admin.elementAt(index).name}',
                  style: TextStyle(
-                   fontSize: 20.0,
-                   fontWeight: FontWeight.bold,color: Colors.black
+                   fontSize: 30.0,
+                   fontWeight: FontWeight.bold,color: Colors.white
                 
                  ),
                  ),

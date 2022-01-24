@@ -44,6 +44,14 @@ class Drower extends StatelessWidget {
             Navigator.pushNamed(context, AppConstant.about);   
             },
           ),
+           ListTile(
+            leading: Icon(Icons.add_box_outlined),
+            hoverColor: Colors.blueGrey,
+            title: Text('Department'),
+            onTap: () {
+            Navigator.pushNamed(context, AppConstant.department);   
+            },
+          ),
         
         ],
       ),

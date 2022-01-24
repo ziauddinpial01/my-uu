@@ -181,6 +181,7 @@ flutter:
     - assets/images/physical education.jpg
     - assets/images/physics.jpg
     - assets/images/textile.jpg
+    - assets/json/teacher_list.json
    
 
 

@@ -120,8 +120,8 @@ class _SignUpState extends State<SignUp> {
        labelText: ' Password',
        hintText: 'Enter your  Password',
        border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30)
-                                   ),
+        borderRadius: BorderRadius.circular(30)
+           ),
        suffixIcon: IconButton(
             icon: Icon(
                _passwordVisible
@@ -155,8 +155,8 @@ class _SignUpState extends State<SignUp> {
        labelText: ' Password',
        hintText: 'Enter your  Password',
        border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30)
-                                   ),
+       borderRadius: BorderRadius.circular(30)
+       ),
        suffixIcon: IconButton(
             icon: Icon(
                _passwordVisible
@@ -183,7 +183,9 @@ class _SignUpState extends State<SignUp> {
                             try{
                               auth.createUserWithEmailAndPassword(
                               email: _emailController.text, 
-                              password: _passwordController.text.toString().trim());
+                              password: _passwordController.text.toString().trim(),
+                              
+                              );
                             }on FirebaseAuthException catch (e){
                               print(e.code);
                             };
