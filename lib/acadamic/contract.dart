@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Contract extends StatefulWidget {
   const Contract({ Key? key }) : super(key: key);
@@ -10,6 +11,9 @@ class Contract extends StatefulWidget {
 class _ContractState extends State<Contract> {
   @override
   Widget build(BuildContext context) {
+    final String _url ='https://uttarauniversity.edu.bd';
+    // List<WebModel> webModel =[];
+
     return Scaffold(
      appBar: AppBar(
        title: Text('Contact Us'),
@@ -92,7 +96,27 @@ class _ContractState extends State<Contract> {
            SizedBox(height: 10.0,),
            Text('E-Mail Address')  ,
            SizedBox(height: 10.0,),
-           Text('info@uttarauniversity.edu.bd')
+              Text('info@uttarauniversity.edu.bd'),
+               SizedBox(height: 10.0,),
+           Container(
+              alignment: Alignment.center,
+          padding: EdgeInsets.all(32),
+         child: ElevatedButton(
+           onPressed: ()async{
+                final url = "http://btebresults.herokuapp.com/";
+                if(await canLaunch(url)){
+                  await launch(url,
+                  forceWebView: true,
+                    enableJavaScript: true,
+                  );
+                }
+              },
+            child: Text('More Information')
+            ), 
+             
+           
+             
+             )
          ],
        ),
      ),

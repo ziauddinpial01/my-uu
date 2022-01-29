@@ -21,6 +21,7 @@ class _HomeState extends State<Home> {
      'assets/images/uu-6.jpg',
     'assets/images/uu-7.png',
     'assets/images/uu-8.jpg',
+    
  
   ];
   @override
@@ -206,6 +207,28 @@ class _HomeState extends State<Home> {
                         },
                       ),
                     ),
+                     
+                    
+                  ],
+                ),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                   
+                    Expanded(
+                      child: _customButton(
+                        context: context,
+                        name: 'Important Links',
+                        // image: 'assets/images/uu-8.png',
+                        color: Color(0xFF64dd17),
+                        iconData: Icons.phone,
+                        onTab: () {
+                          Navigator.pushNamed(context, AppConstant.link);
+                        },
+                      ),
+                    ),
+                    
                      
                     
                   ],

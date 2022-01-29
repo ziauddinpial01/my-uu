@@ -37,7 +37,7 @@ class Drower extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.add_box_outlined),
+            leading: Icon(Icons.account_box_outlined ),
             hoverColor: Colors.blueGrey,
             title: Text('About'),
             onTap: () {
@@ -45,11 +45,47 @@ class Drower extends StatelessWidget {
             },
           ),
            ListTile(
-            leading: Icon(Icons.add_box_outlined),
+            leading: Icon(Icons.home_work_rounded),
             hoverColor: Colors.blueGrey,
             title: Text('Department'),
             onTap: () {
             Navigator.pushNamed(context, AppConstant.department);   
+            },
+          ),
+           ListTile(
+            leading: Icon(Icons.add),
+            hoverColor: Colors.blueGrey,
+            title: Text('Admission'),
+            onTap: () {
+            Navigator.pushNamed(context, AppConstant.admisstion);   
+            },
+          ), ListTile(
+            leading: Icon(Icons.add_moderator_rounded),
+            hoverColor: Colors.blueGrey,
+            title: Text('Administrative'),
+            onTap: () {
+            Navigator.pushNamed(context, AppConstant.administrative);   
+            },
+          ), ListTile(
+            leading: Icon(Icons.theater_comedy_sharp),
+            hoverColor: Colors.blueGrey,
+            title: Text('Teacher'),
+            onTap: () {
+            Navigator.pushNamed(context, AppConstant.teacher);   
+            },
+          ), ListTile(
+            leading: Icon(Icons.photo),
+            hoverColor: Colors.blueGrey,
+            title: Text('Gallery'),
+            onTap: () {
+            Navigator.pushNamed(context, AppConstant.galary);   
+            },
+          ), ListTile(
+            leading: Icon(Icons.add_ic_call_rounded ),
+            hoverColor: Colors.blueGrey,
+            title: Text('Contract Us'),
+            onTap: () {
+            Navigator.pushNamed(context, AppConstant.contrat_us);   
             },
           ),
         
