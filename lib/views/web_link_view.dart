@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_uu/models/web_model.dart';
-import 'package:my_uu/repository/webRepo.dart';
+import 'package:my_uu/repository/webrepo.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 

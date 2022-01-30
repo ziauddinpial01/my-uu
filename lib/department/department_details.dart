@@ -42,9 +42,7 @@ class DepartmentDetails extends StatelessWidget {
               ),
               SizedBox(height: 15.0,),
               Text('${arg.deptdetails!.details}', ),  
-              
-                
-              
+  
             ],
           ),
         ),

@@ -113,9 +113,7 @@ class _ContractState extends State<Contract> {
               },
             child: Text('More Information')
             ), 
-             
-           
-             
+  
              )
          ],
        ),

@@ -1,37 +1,54 @@
 [
     {
         "id":1,
-        "name":"Ministry of Education",
-        "web_url":"http://www.moedu.gov.bd/"
+        "name":"UU Bus Service",
+        "web_url":"https://uttarauniversity.edu.bd/bus"
     },
     {
         "id":2,
-        "name":"Department of Secondary and Higher Education",
-        "web_url":"http://www.dshe.gov.bd/"
+        "name":"Exam Routine",
+        "web_url":"https://uttarauniversity.edu.bd/exam-routine/"
     },
     {
         "id":3,
-        "name":"Banbase",
-        "web_url":"http://www.banbeis.gov.bd/"
+        "name":"Class Routine",
+        "web_url":"https://uttarauniversity.edu.bd/class-routine/"
     },
     {
         "id":4,
-        "name":"Naeem",
-        "web_url":"http://www.naem.gov.bd/"
+        "name":"Tuition & Fees",
+        "web_url":"https://uttarauniversity.edu.bd/tuition-fees/"
     },
     {
         "id":5,
-        "name":"NCTB",
-        "web_url":"http://www.nctb.gov.bd/"
+        "name":"Payment Information",
+        "web_url":"https://uttarauniversity.edu.bd/payment-information/"
     },
     {
         "id":6,
-        "name":"Teacher window",
-        "web_url":"http://www.teachers.gov.bd/"
+        "name":"Fadilities",
+        "web_url":"https://uttarauniversity.edu.bd/facilities/"
     },
     {
         "id":7,
-        "name":"Teenage window",
-        "web_url":"http://www.konnect.edu.bd/"
+        "name":"DOSA",
+        "web_url":"https://uttarauniversity.edu.bd/director-office-of-the-student-affairs-dosa/"
+    },
+    {
+        "id":8,
+        "name":"International Collaboration",
+        "web_url":"https://uttarauniversity.edu.bd/international-collaboration/"
+    },
+    {
+        "id":9,
+        "name":"Admin & Faculty Login",
+        "web_url":"https://erp.uttarauniversity.edu.bd/Employee/Account/SignIn"
+    },
+    {
+        "id":10,
+        "name":"Student Login",
+        "web_url":"https://erp.uttarauniversity.edu.bd/Student/Account/Login"
     }
+
+  
 ]

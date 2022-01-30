@@ -15,12 +15,12 @@ class _TeacherDetailsState extends State<TeacherDetails> {
       appBar: AppBar(title: Text('Teacher Details'),
       centerTitle: true,
       backgroundColor: Colors.brown,
-      ),
+    ),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
             children: [SizedBox(height: 15.0,),
-              // Text('${arg.id}'),
+           
               Container(width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(40.0),color: Color(0xFFd1c4e9)),
                 child: Center(
@@ -30,7 +30,7 @@ class _TeacherDetailsState extends State<TeacherDetails> {
               ),
               SizedBox(height: 25.0,),
 
-              // Text('${arg.techdetails!.id}'),
+       
               Container(width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(50.0),color: Color(0xFF90caf9)),
                 child: Center(
