@@ -19,18 +19,18 @@ class AdminDetails extends StatelessWidget {
             children: [SizedBox(height: 20.0,),
 
               Container(width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.0),color: Color(0xFFba68c8)
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.0),color: Colors.green
               ),
                 child: Center(child: Text('${arg.name}',style: TextStyle(
                   fontSize: 25.0,fontWeight: FontWeight.bold,color: Colors.white),))),
               SizedBox(height: 30.0,),
 
               Container(width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.0),color: Color(0xFF90caf9)
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.0),color: Colors.green
               ),
                 child: Center(
                   child: Text('${arg.addetails!.title}',style: TextStyle(
-                    fontSize: 25.0,fontWeight: FontWeight.bold,color: Colors.black)),
+                    fontSize: 25.0,fontWeight: FontWeight.bold,color: Colors.white)),
                 )),
               SizedBox(height: 20.0,),
 

@@ -38,22 +38,26 @@ void _launchURL(String  url) async {
   
     return Scaffold(
      
-      appBar: AppBar(title: Center(child: Text('weblink view')),
-      // leading: ElevatedButton(onPressed:  (){
-      //   Navigator.pushNamed(context, '/');
-      // }, child: Icon(Icons.arrow_back),
-      // )      
+      appBar: AppBar(title:
+       Center(
+        child: Text('weblink view',style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),
+        ),
+        ),backgroundColor: Colors.brown,
+      
       ),
       body: ListView.builder(
         itemCount: webList.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.only(top: 5.0,left: 10.0,right: 10.0),
+            padding: const EdgeInsets.only(top: 5.0,left: 10.0,right: 10.0,bottom: 15.0),
+            
             child: ElevatedButton(
                 onPressed: () {
                   _launchURL('${webList.elementAt(index).webUrl}');
                 },
-                child: Text('${webList.elementAt(index).name}'),
+                child: Text('${webList.elementAt(index).name}',
+                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25.0),
+                ),
                 style: ElevatedButton.styleFrom(
                   primary: Colors.green.shade900,
                   padding: EdgeInsets.only(top: 20,bottom: 20),

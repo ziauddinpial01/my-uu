@@ -111,7 +111,7 @@ class _TeachersState extends State<Teachers> {
       )
       ),
       Teacher(id: 7, name: 'English', techdetails: TechDetailsModel(
-        id: 6, name1: 'HASPIA BASHIRULLAH', degignation1: 'Dean',
+        id: 7, name1: 'HASPIA BASHIRULLAH', degignation1: 'Dean',
         img1: 'assets/images/eng-1.jpg',
 
          name2: 'RAFI IMAM', degignation2: 'Professor',
@@ -129,11 +129,10 @@ class _TeachersState extends State<Teachers> {
         name6: 'SALEH AHMAD', degignation6: 'Assistant Professor', 
         img6: 'assets/images/eng-3.jpg'
 
-      )),
-      Teacher(id: 8, name: 'Environmental Engineering & Science',),
-      Teacher(id: 9, name: 'Fashion Design & Technology',
+      )), 
+      Teacher(id: 8, name: 'Fashion Design & Technology',
        techdetails: TechDetailsModel(
-        id: 9, name1: 'FARRUQUE MOHAMMAD MASUD', degignation1: 'Chairman',
+        id: 8, name1: 'FARRUQUE MOHAMMAD MASUD', degignation1: 'Chairman',
         img1: 'assets/images/fashion-1.jpg',
 
          name2: 'SUDIPTA BAIN', degignation2: 'Assistant Professor And Coordinator',
@@ -152,8 +151,8 @@ class _TeachersState extends State<Teachers> {
         img6: 'assets/images/fashion-6.jpg'
 
       )),
-      Teacher(id: 10, name: 'Islamic Studies', techdetails: TechDetailsModel(
-        id: 6, name1: 'DR. MD. ABUL KALAM PATWAREY', degignation1: 'Chairman',
+      Teacher(id: 9, name: 'Islamic Studies', techdetails: TechDetailsModel(
+        id: 9, name1: 'DR. MD. ABUL KALAM PATWAREY', degignation1: 'Chairman',
         img1: 'assets/images/islamic-1.jpg',
 
          name2: 'DR. MOSTAFA KABIR SIDDIQUI', degignation2: 'Assistant Professor And Coordinator',
@@ -168,8 +167,8 @@ class _TeachersState extends State<Teachers> {
         name6: 'MD. EMRAN	', degignation6: 'Lecturer', 
         img6: 'assets/images/islamic-6.jpg'
       )),
-      Teacher(id: 11,name: 'LAW', techdetails: TechDetailsModel(
-        id: 6, name1: 'Dr. SYEDA AFROZA ZERIN', degignation1: 'Associate Professor And Chairman',
+      Teacher(id: 10,name: 'LAW', techdetails: TechDetailsModel(
+        id: 10, name1: 'Dr. SYEDA AFROZA ZERIN', degignation1: 'Associate Professor And Chairman',
         img1: 'assets/images/law-1.jpg',
          name2: 'MD. ASRAFUZZAMAN BABU', degignation2: 'Assistant Professor And Coordinator',
         img2: 'assets/images/law-2.jpg',
@@ -182,8 +181,8 @@ class _TeachersState extends State<Teachers> {
         name6: 'MOHAMMAD IMAM HOSSAIN', degignation6: 'Assistant Professor', 
         img6: 'assets/images/law-6.jpg'
       )),
-      Teacher(id: 12,name: 'Mathematics', techdetails: TechDetailsModel(
-        id: 12, name1: 'DR. SHAHANSHA KHAN', degignation1: 'Chairman And Coordinator',
+      Teacher(id: 11,name: 'Mathematics', techdetails: TechDetailsModel(
+        id: 11, name1: 'DR. SHAHANSHA KHAN', degignation1: 'Chairman And Coordinator',
         img1: 'assets/images/math-1.jpg',
          name2: 'DR. MOQBUL HOSSAIN', degignation2: 'Professor',
         img2: 'assets/images/math-2.jpg',
@@ -196,8 +195,8 @@ class _TeachersState extends State<Teachers> {
         name6: 'NAZMUN NAHAR', degignation6: 'Senior Lecturer', 
         img6: 'assets/images/math-6.jpg'
       )),
-      Teacher(id: 13,name: 'Physical Education', techdetails: TechDetailsModel(
-        id: 6, name1: 'Mohammad Shahidullah', degignation1: 'Assistant Professor',
+      Teacher(id: 12,name: 'Physical Education', techdetails: TechDetailsModel(
+        id: 12, name1: 'Mohammad Shahidullah', degignation1: 'Assistant Professor',
         img1: 'assets/images/physical-3.jpg',
          name2: 'MD. JAHANGIR ALI', degignation2: 'Associate Professor And Chairman',
         img2: 'assets/images/physical-2.jpg',
@@ -210,9 +209,8 @@ class _TeachersState extends State<Teachers> {
         name6: 'Md. Rubel Islam', degignation6: 'Lecturer', 
         img6: 'assets/images/physical-6.jpg'
       )),
-      Teacher(id: 14,name: 'Physics'),
-      Teacher(id: 15,name: 'Textile Engineering', techdetails: TechDetailsModel(
-        id: 15, name1: 'MD. ABU BAKAR SIDDIQUE', degignation1: 'Adviser',
+      Teacher(id: 13,name: 'Textile Engineering', techdetails: TechDetailsModel(
+        id: 13, name1: 'MD. ABU BAKAR SIDDIQUE', degignation1: 'Adviser',
         img1: 'assets/images/textile-1.jpg',
          name2: 'MD. HUMAYUN KABIR KHAN', degignation2: 'Assistant Professor & Chairman',
         img2: 'assets/images/textile-2.jpg',
@@ -230,12 +228,11 @@ class _TeachersState extends State<Teachers> {
       title: Text('Teachers List',style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold),),backgroundColor: Colors.brown,
       centerTitle: true,
     ),
-      backgroundColor: Colors.grey,
      body: ListView.builder(
        itemCount: teacher.length,
        itemBuilder: (context, index) {
          return Container(
-          //  color: Colors.white,
+         
            padding: EdgeInsets.symmetric(horizontal: 20.0),
            margin: EdgeInsets.all(10.0),
            child: ElevatedButton(
@@ -261,34 +258,38 @@ class _TeachersState extends State<Teachers> {
                }else if(teacher.elementAt(index).id==7){
                 Teacher eng  = teacher[6];
                  Navigator.pushNamed(context, AppConstant.tech_details , arguments: eng);              
-               }else if(teacher.elementAt(index).id==9){
-                Teacher fashion  = teacher[8];
+               }else if(teacher.elementAt(index).id==8){
+                Teacher fashion  = teacher[7];
                  Navigator.pushNamed(context, AppConstant.tech_details , arguments: fashion);              
-               }else if(teacher.elementAt(index).id==10){
-                Teacher islamic  = teacher[9];
+               }else if(teacher.elementAt(index).id==9){
+                Teacher islamic  = teacher[8];
                  Navigator.pushNamed(context, AppConstant.tech_details , arguments: islamic);              
-               }else if(teacher.elementAt(index).id==11){
-                Teacher law  = teacher[10];
+               }else if(teacher.elementAt(index).id==10){
+                Teacher law  = teacher[9];
                  Navigator.pushNamed(context, AppConstant.tech_details , arguments: law);              
-               }else if(teacher.elementAt(index).id==12){
-                Teacher math  = teacher[11];
+               }else if(teacher.elementAt(index).id==11){
+                Teacher math  = teacher[10];
                  Navigator.pushNamed(context, AppConstant.tech_details , arguments: math);              
-               }else if(teacher.elementAt(index).id==13){
-                Teacher physical  = teacher[12];
+               }else if(teacher.elementAt(index).id==12){
+                Teacher physical  = teacher[11];
                  Navigator.pushNamed(context, AppConstant.tech_details , arguments: physical);              
-               }else if(teacher.elementAt(index).id==15){
-                Teacher textile  = teacher[14];
+               }else if(teacher.elementAt(index).id==13){
+                Teacher textile  = teacher[12];
                  Navigator.pushNamed(context, AppConstant.tech_details , arguments: textile);              
                }
              },
              style: ElevatedButton.styleFrom(
-               primary: Color(0xFF80cbc4)
-             ),
+              primary: Colors.green.shade900,
+                  padding: EdgeInsets.only(top: 20,bottom: 20),
+                  shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          elevation: 15.0,             ),
               child: Text('${teacher.elementAt(index).name}',
               style: TextStyle(
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
-                color: Colors.black
+                color: Colors.white
               ),
               )
               ),

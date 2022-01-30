@@ -54,8 +54,8 @@ class Administrative extends StatelessWidget {
         id: 8, name: 'DOSA Profile', title: 'Objective:',
         details: 'Uttara University has constituted DOSA with a mission to promote and develop the issues of student affairs. To build a constructive positive image of UU by proper enhancement of internal and external student activities and to maintain effective coordination among student community, administration and academic body of UU.'  )
       ),
-      Administra(id: 9,name: 'IT Department'),
-      Administra(id: 10,name: 'University Committees',
+     
+      Administra(id: 9,name: 'University Committees',
       addetails: AdminDetailsModel(
         id: 10, name: 'Admission Committee',
         title: 'Finance Committee',
@@ -100,22 +100,21 @@ class Administrative extends StatelessWidget {
                 }else if(admin.elementAt(index).id==8){
                    Administra Student = admin [7];
                  Navigator.pushNamed(context,AppConstant.admin_details,arguments: Student);                
-                }else if(admin.elementAt(index).id==10){
-                   Administra Committees = admin [9];
+                }else if(admin.elementAt(index).id==9){
+                   Administra Committees = admin [8];
                  Navigator.pushNamed(context,AppConstant.admin_details,arguments: Committees);                
                 }else if(admin.elementAt(index).id==10){
                    Administra Pro_Vice = admin [9];
                  Navigator.pushNamed(context,AppConstant.admin_details,arguments: Pro_Vice);                
-                }else if(admin.elementAt(index).id==11){
-                   Administra Pro_Vice = admin [10];
-                 Navigator.pushNamed(context,AppConstant.admin_details,arguments: Pro_Vice);                
-                }else if(admin.elementAt(index).id==12){
-                   Administra Pro_Vice = admin [11];
-                 Navigator.pushNamed(context,AppConstant.admin_details,arguments: Pro_Vice);                
                 }
               },
                style: ElevatedButton.styleFrom(
-              primary: Color(0xFFf48fb1),
+              primary: Colors.green.shade900,
+                  padding: EdgeInsets.only(top: 20,bottom: 20),
+                  shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          elevation: 15.0,
                        
             ),
                child: Padding(

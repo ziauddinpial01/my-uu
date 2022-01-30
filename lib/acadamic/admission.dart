@@ -22,7 +22,7 @@ class _AdmissionState extends State<Admission> {
            
            Center(
              child: Title(color: Colors.green, 
-             child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: Colors.blueGrey,
+             child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: Colors.green,
              ),width: MediaQuery.of(context).size.width,
             
                child: Center(
@@ -30,7 +30,7 @@ class _AdmissionState extends State<Admission> {
                  style: TextStyle(
                    fontWeight: FontWeight.bold,
                    fontSize: 30.0,
-     color: Colors.white
+                     color: Colors.white
                  ),
                  ),
                ),
@@ -103,7 +103,7 @@ class _AdmissionState extends State<Admission> {
           padding: const EdgeInsets.all(10.0),
           child: Title(color: Colors.green, 
           child: Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: Colors.blueGrey,
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: Colors.green,
              ),width: MediaQuery.of(context).size.width,
             
             child: Text('Required Documents During Admission',style: TextStyle(
@@ -116,19 +116,19 @@ class _AdmissionState extends State<Admission> {
           child: Text('All Academic Certificates in original and photocopies;',style: TextStyle(
                    fontSize: 17.0,)),
         ),
-                  SizedBox(height: 15.0,),
+                  SizedBox(height: 5.0,),
         Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(15.0),
           child: Text('All Mark Sheets/Transcripts in original and photocopies;',style: TextStyle(
                    fontSize: 17.0,)),
         ),
-                  SizedBox(height: 15.0,),
+                  SizedBox(height: 5.0,),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(15.0),
           child: Text('Three copies of colored passport size; and',style: TextStyle(
                    fontSize: 17.0,)),
         ),
-                  SizedBox(height: 15.0,),
+                  SizedBox(height: 5.0,),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text('One copy of colored stamp size photograph.',style: TextStyle(
@@ -137,7 +137,7 @@ class _AdmissionState extends State<Admission> {
         SizedBox(height: 20.0,),
         Center(
           child: Title(color: Colors.green,
-           child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: Colors.blueGrey,
+           child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: Colors.green,
              ),width: MediaQuery.of(context).size.width,
             
              child: Center(
@@ -298,7 +298,7 @@ class _AdmissionState extends State<Admission> {
             ),
           ),
         ),
-
+SizedBox(height: 20.0,)
          ],
        ),
      )

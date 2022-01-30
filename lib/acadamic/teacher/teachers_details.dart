@@ -22,10 +22,10 @@ class _TeacherDetailsState extends State<TeacherDetails> {
             children: [SizedBox(height: 15.0,),
            
               Container(width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(40.0),color: Color(0xFFd1c4e9)),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(40.0),color: Colors.green),
                 child: Center(
                   child: Text('${arg.name}',
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30.0),),
+                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30.0,color: Colors.white),),
                 ),
               ),
               SizedBox(height: 25.0,),
@@ -124,7 +124,7 @@ class _TeacherDetailsState extends State<TeacherDetails> {
 
               SizedBox(height: 15.0,),
               Container(width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(40.0),color: Color(0xFFd1c4e9)),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(40.0),color: Color(0xFF90caf9)),
                 child: Center(
                   child: Text('${arg.techdetails!.name6}',
                     style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold)),
@@ -138,6 +138,7 @@ class _TeacherDetailsState extends State<TeacherDetails> {
                 )),
               SizedBox(height: 15.0,),
               Image.asset('${arg.techdetails!.img6}'),
+              SizedBox(height: 20.0,),
               
               
             ],

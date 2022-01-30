@@ -18,6 +18,10 @@ class ContractUs extends StatelessWidget {
            child: Column(
              children: [
                Image.asset('assets/images/mypic.jpg'),
+                SizedBox(height: 20.0,),
+               Text('J M Ziauddin Pial'),
+               Text('Diplima Enginner'),
+               Text('Bsc Engineering Running'),
                 SizedBox(height: 20.0,),          
                Title(
                  color: Colors.green, 
@@ -28,6 +32,7 @@ class ContractUs extends StatelessWidget {
                     ),
                )
                ),
+              
                SizedBox(height: 20.0,),
                Title(
                  color: Colors.green, 

@@ -177,20 +177,23 @@ img: 'assets/images/physics.jpg'
   
             }, 
             style: ElevatedButton.styleFrom(
-              primary: Color(0xFFffee58),
-                       
+                primary: Colors.green.shade900,
+                  padding: EdgeInsets.only(top: 20,bottom: 20),
+                  shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25),
+                          ),
+                          elevation: 15.0,                       
             ),
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15.0),
               child: Text('${deptList.elementAt(index).name}',
               style: TextStyle(
                 fontSize: 25.0,
-                fontWeight: FontWeight.bold, color: Colors.black, 
+                fontWeight: FontWeight.bold, color: Colors.white, 
+              ),              
               ),
-              
-              ),
-            )),
-            
+            ), 
+            ),           
           );
         },
         ),

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:my_uu/conts/apps_conts.dart';
@@ -21,7 +23,17 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
        backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
+        child: SizedBox(
+          height: MediaQuery.of(context).size.height,
+          width: double.maxFinite,
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              ImageFiltered(imageFilter: ImageFilter.blur(sigmaX: 6,sigmaY: 5),
+              child: Image.asset('assets/images/uu-7.png',fit: BoxFit.cover,),
+              ),
+          
+         Column(
           children: [
             SizedBox(
               height: 150.0,
@@ -40,7 +52,7 @@ class _SignUpState extends State<SignUp> {
                     ),
                     Text(
                       "Sign Up",
-                      style: TextStyle(fontSize: 22.0, color: Colors.white),
+                      style: TextStyle(fontSize: 30.0, color: Colors.red),
                     ),
                   ],
                 ),
@@ -49,7 +61,7 @@ class _SignUpState extends State<SignUp> {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(28.0),
                     topRight: Radius.circular(28.0),
@@ -68,13 +80,13 @@ class _SignUpState extends State<SignUp> {
                         Text(
                           "Sign Up",
                           style: TextStyle(
-                              fontSize: 22.0, color: Colors.red),
+                              fontSize: 30.0, color: Colors.red),
                         ),
                         Text(
                           "Create an account, its free.",
                           style: TextStyle(
-                            fontSize: 14.0,
-                            color: Colors.blue,
+                            fontSize: 20.0,
+                            color: Colors.red,
                           ),
                         ),
                         SizedBox(
@@ -93,12 +105,12 @@ class _SignUpState extends State<SignUp> {
                                    label: Text('Email'),
                                   hintStyle: TextStyle(
                                     fontSize: 14.0,
-                                    color: Color(0xFF414041),
+                                    color: Colors.red,
                                   ),
                                  
                                   labelStyle: TextStyle(
                                     fontSize: 15.0,
-                                    color: Colors.blue,
+                                    color: Colors.red,
                                   ),
                                 ),
                               ),
@@ -119,6 +131,10 @@ class _SignUpState extends State<SignUp> {
    decoration: InputDecoration(
        labelText: ' Password',
        hintText: 'Enter your  Password',
+       labelStyle: TextStyle(
+                                    fontSize: 15.0,
+                                    color: Colors.red,
+                                  ),
        border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(30)
            ),
@@ -148,12 +164,16 @@ class _SignUpState extends State<SignUp> {
                           
                             Expanded(
                               child:  TextFormField(
-   keyboardType: TextInputType.text,
-   controller: _confirmPassword,
-   obscureText: !_passwordVisible,
-   decoration: InputDecoration(
-       labelText: ' Password',
-       hintText: 'Enter your  Password',
+                 keyboardType: TextInputType.text,
+                  controller: _confirmPassword,
+                    obscureText: !_passwordVisible,
+                       decoration: InputDecoration(
+                     labelText: 'Confirm Password',
+                     hintText: 'Confirm Password',
+                       labelStyle: TextStyle(
+                         fontSize: 15.0,
+                       color: Colors.red,
+                       ),
        border: OutlineInputBorder(
        borderRadius: BorderRadius.circular(30)
        ),
@@ -192,7 +212,7 @@ class _SignUpState extends State<SignUp> {
                             
                             
                           },
-                           child: Text('Sign Up')),
+                           child: Text('Sign Up',style:TextStyle(color: Colors.white),)),
                         ),
                         
                         
@@ -206,16 +226,16 @@ class _SignUpState extends State<SignUp> {
                               style: TextStyle(
                                 fontSize: 13.0,
                                 fontWeight: FontWeight.w600,
-                                color: Color(0xFFBBBBBB),
+                                color: Colors.red,
                               ),
                             ),
                             GestureDetector(
                               child: Text(
                                 " Sign In",
                                 style: TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 20.0,
                                   fontWeight: FontWeight.w600,
-                                  color: Colors.blue,
+                                  color: Colors.red,
                                 ),
                               ),
                               onTap: () {
@@ -232,8 +252,10 @@ class _SignUpState extends State<SignUp> {
             ),
           ],
         ),
-      ),
-      
+       ],
+          ),
+             ),
+       ),
     );
   }
 }

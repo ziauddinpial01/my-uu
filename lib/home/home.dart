@@ -5,12 +5,10 @@ import 'package:my_uu/conts/apps_conts.dart';
 import 'package:my_uu/home/drower.dart';
 import 'package:my_uu/ui/exit_popup.dart';
 
-
 class Home extends StatefulWidget {
   @override
   State<Home> createState() => _HomeState();
 }
-
 class _HomeState extends State<Home> {
   int activeIndex=0;
    final urlImages =[
@@ -22,8 +20,6 @@ class _HomeState extends State<Home> {
      'assets/images/uu-6.jpg',
     'assets/images/uu-7.png',
     'assets/images/uu-8.jpg',
-    
- 
   ];
   @override
   Widget build(BuildContext context) {
@@ -31,8 +27,7 @@ class _HomeState extends State<Home> {
       onWillPop: () => showExitPopup(context),
       child: Scaffold(
         drawer: Drower(),
-        backgroundColor: Color(0xFFe6ee9c),
-     
+        backgroundColor: Colors.white,    
         appBar: AppBar(
           title: Text('Uttara University', style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),),
           backgroundColor: Colors.brown,
@@ -41,12 +36,10 @@ class _HomeState extends State<Home> {
         body:
          Padding(
           padding: const EdgeInsets.all(20.0),
-          child: SingleChildScrollView(
-            
+          child: SingleChildScrollView(            
             child: Padding(
               padding: const EdgeInsets.all(15.0),
-              child: Column(
-                  
+              child: Column(                  
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -55,15 +48,12 @@ class _HomeState extends State<Home> {
                      final urlImage = urlImages[index];
                      return buildImage(urlImage,index);
                    }, 
-                   options: CarouselOptions(
-                     
+                   options: CarouselOptions(                     
                      height: 200,
-                     autoPlay: true,
-                    
+                     autoPlay: true,                    
                      enlargeCenterPage: true,
                      enableInfiniteScroll: true,
-                     enlargeStrategy: CenterPageEnlargeStrategy.height,
-                   
+                     enlargeStrategy: CenterPageEnlargeStrategy.height,                   
                     pageSnapping: false,
                      autoPlayInterval: Duration(seconds: 3),
                      onPageChanged: (index, reason) => 
@@ -73,14 +63,14 @@ class _HomeState extends State<Home> {
                      const SizedBox(height: 32),
                      Center(
                        child: DotsIndicator(
-      dotsCount: urlImages.length,
-      position: activeIndex.toDouble(),
-      decorator: DotsDecorator(
-      size: const Size.square(9.0),
-      activeSize: const Size(18.0, 9.0),
-      activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-      ),
-    ),
+                      dotsCount: urlImages.length,
+                       position: activeIndex.toDouble(),
+                         decorator: DotsDecorator(
+                       size: const Size.square(9.0),
+                         activeSize: const Size(18.0, 9.0),
+                         activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+                         ),
+                        ),
                      ),
                   SizedBox(
                     height: 10.0,
@@ -93,72 +83,69 @@ class _HomeState extends State<Home> {
                         child: _customButton(
                           context: context,
                           name: 'Home',
-                          color: Color(0xFF84ffff),
-                        
+                          color: Colors.green,                       
                           iconData: Icons.home,
                           onTab: () {
                             Navigator.pushNamed(context, '/homeview');
                           },
                         ),
-                      ),
-                      Expanded(
+                      ), 
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                       Expanded(
                         child: _customButton(
-                          context: context,
-                          
-                          name: 'Department',
-                       
-                          color: Color(0xFFeeff41),
+                          context: context,                          
+                          name: 'Department',                      
+                          color: Colors.green,
                           iconData: Icons.home_work_rounded,
                           onTab: () {
                             Navigator.pushNamed(context, AppConstant.department);
                           },
                         ),
-                      ),
-                     
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      
+                      ),                     
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Admission',
-                        
-                          color: Colors.blueAccent,
+                          name: 'Admission',                       
+                          color: Colors.green,
                           iconData: Icons.add,
                           onTab: () {
                             Navigator.pushNamed(context,AppConstant.admisstion);
                           },
                         ),
-                      ),
-                       Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'Administrative ',
-                       
-                          color: Color(0xFF9ccc64),
-                          iconData: Icons.add_moderator_rounded,
-                          onTab: () {
-                            Navigator.pushNamed(context,AppConstant.administrative);
-                          },
-                        ),
-                      ),
+                      ),                      
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                     
-                      Expanded(
+                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Teachers',
-                        
-                          color: Color(0xFF78909c),
+                          name: 'Administrative ',                       
+                          color: Colors.green,
+                          iconData: Icons.add_moderator_rounded,
+                          onTab: () {
+                            Navigator.pushNamed(context,AppConstant.administrative);
+                          },
+                        ),
+                      ),  
+                    ],
+                  ),
+                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                       Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Teachers',                        
+                          color: Colors.green,
                           iconData: Icons.theater_comedy_sharp,
                           onTab: () {
                             Navigator.pushNamed(context, AppConstant.teacher);
@@ -168,72 +155,59 @@ class _HomeState extends State<Home> {
                        Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Gallery  ',
-                          
-                          color: Color(0xFFff6d00),
+                          name: 'Gallery  ',                          
+                          color: Colors.green,
                           iconData: Icons.photo,
                           onTab: () {
                             Navigator.pushNamed(context, AppConstant.galary);
                           },
                         ),
-                      ),
-                      
+                      ),  
                     ],
                   ),
-                   Row(
+                    Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                     
+                    children: [                    
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Contract',
-                       
-                          color: Color(0xFF64dd17),
+                          name: 'Contract',                      
+                          color: Colors.green,
                           iconData: Icons.phone,
                           onTab: () {
                             Navigator.pushNamed(context, AppConstant.contract);
                           },
                         ),
-                      ),
-                       Expanded(
-                        child: _customButton(
-                          context: context,
-                          name: 'Registration',
-                          color: Color(0xFF42a5f4),
-                       
-                          
-                          iconData: Icons.account_circle ,
-                          onTab: () {
-                            Navigator.pushNamed(context, AppConstant.homepage);
-                          },
-                        ),
-                      ),
-                       
-                      
+                      ),  
                     ],
                   ),
                    Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                     
+                    children: [                     
                       Expanded(
                         child: _customButton(
                           context: context,
-                          name: 'Important Links',
-                        
-                          color: Color(0xFF64dd17),
+                          name: 'Important Links',                        
+                          color: Colors.green,
                           iconData: Icons.phone,
                           onTab: () {
                             Navigator.pushNamed(context, AppConstant.link);
                           },
                         ),
                       ),
-                      
-                       
-                      
+                      Expanded(
+                        child: _customButton(
+                          context: context,
+                          name: 'Registration',
+                          color: Colors.green, 
+                          iconData: Icons.account_circle ,
+                          onTab: () {
+                            Navigator.pushNamed(context, AppConstant.homepage);
+                          },
+                        ),
+                      ),   
                     ],
                   ),
                  
@@ -271,11 +245,11 @@ class _HomeState extends State<Home> {
            
             Icon(
               iconData,
-              size: 50.0,
+              size: 50.0,color: Colors.white,
             ),
             Text(
               '$name',
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold,color: Colors.white),
             ),
           ],
         ),
