@@ -39,4 +39,4 @@ Details about of Uttara University.
  [Download UU.apk]()
 
  ## Developer 
- Hello, i am developer, my email is [email](ziauddinpial01@gmail.com). 
+ Hello, i am developer, my email is [email](mailto:ziauddinpial01@gmail.com). 
