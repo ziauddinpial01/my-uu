@@ -2,7 +2,7 @@ import 'package:my_uu/acadamic/about.dart';
 import 'package:my_uu/acadamic/administrative.dart';
 import 'package:my_uu/acadamic/admission.dart';
 import 'package:my_uu/acadamic/contract.dart';
-import 'package:my_uu/acadamic/contractus.dart';
+import 'package:my_uu/acadamic/ContactUs.dart';
 import 'package:my_uu/acadamic/department.dart';
 import 'package:my_uu/acadamic/gallery.dart';
 import 'package:my_uu/acadamic/homeview.dart';
@@ -38,7 +38,7 @@ class AppRoutes {
       AppConstant.dept_details  :(context)=> DepartmentDetails(),
       AppConstant.tech_details : (context)=> TeacherDetails(),
      AppConstant.admin_details   :(context)=> AdminDetails(),
-     AppConstant.contrat_us   :(context)=> ContractUs(),
+     AppConstant.Contact_us   :(context)=> ContactUs(),
      AppConstant.link   :(context)=> WebLinkView(),
      
      

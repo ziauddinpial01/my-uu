@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ContractUs extends StatelessWidget {
-  const ContractUs({ Key? key }) : super(key: key);
+class ContactUs extends StatelessWidget {
+  const ContactUs({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +18,8 @@ class ContractUs extends StatelessWidget {
            child: Column(
              children: [
                Image.asset('assets/images/mypic.jpg'),
+                SizedBox(height: 20.0,),
+                Text('Developer Details',style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold,color: Colors.green),),
                 SizedBox(height: 20.0,),
                Text('J M Ziauddin Pial'),
                Text('Diplima Enginner'),

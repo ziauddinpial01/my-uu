@@ -83,9 +83,9 @@ class Drower extends StatelessWidget {
           ), ListTile(
             leading: Icon(Icons.add_ic_call_rounded ),
             hoverColor: Colors.blueGrey,
-            title: Text('Contract Us'),
+            title: Text('Contact Us'),
             onTap: () {
-            Navigator.pushNamed(context, AppConstant.contrat_us);   
+            Navigator.pushNamed(context, AppConstant.Contact_us);   
             },
           ),
         

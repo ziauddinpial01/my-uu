@@ -1,16 +1,42 @@
-# my_uu
+# Uttara University
 
-A new Flutter project.
+Details about of Uttara University.
 
-## Getting Started
+## Featues
 
-This project is a starting point for a Flutter application.
+ - About details of Uttara University 
+ - About details of all departmant 
+ - About details of admission process
+ - About details of all administrative
+ - About details of all department teacher details
+ - Photos of Uttara University
+ - About contact details
+ - Importent web link of uttara university
+ - All of user are access to this apps and know about of uttara university
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ ## Screenshots
+ <img src="screenshots/details-1.jpg"
+ height="250">
+ <img src="screenshots/details-2.jpg"
+ height="250">
+  <img src="screenshots/details-3.jpg"
+ height="250">
+ <img src="screenshots/details-4.jpg"
+ height="250">
+  <img src="screenshots/details-5.jpg"
+ height="250">
+ <img src="screenshots/details-6.jpg"
+ height="250">
+  <img src="screenshots/details-7.jpg"
+ height="250">
+ <img src="screenshots/details-8.jpg"
+ height="250">
+  <img src="screenshots/details-9.jpg"
+ height="250">
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ ## Download Apk
+ [Download UU.apk]()
+
+ ## Developer 
+ Hello, i am developer, my email is [email](ziauddinpial01@gmail.com). 

@@ -17,6 +17,6 @@ class AppConstant {
   static const admin_details = '/admin_details'; 
   static const tech_details = '/tech_details'; 
   static const tech_view = '/tech_view'; 
-  static const contrat_us = '/contrat_us'; 
+  static const Contact_us = '/Contact_us'; 
   static const link = '/link'; 
 }
