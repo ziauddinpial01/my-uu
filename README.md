@@ -36,7 +36,7 @@ Details about of Uttara University.
  height="250">
 
  ## Download Apk
- [Download UU.apk]()
+  Android : [Download UU.apk](https://drive.google.com/file/d/1F9U7AoiUjt63b9FXN3STiUXX6lLzzwKW/view?usp=sharing)
 
  ## Developer 
- Hello, i am developer, my email is [email](mailto:ziauddinpial01@gmail.com). 
+ Hi there! I am J M Ziauddin Piaual. I create Android apps for about details of Uttara University . Try out my new app Uttara University. If you have any query related to it don't hasitate to e-mail me. [email](mailto:ziauddinpial01@gmail.com). 
